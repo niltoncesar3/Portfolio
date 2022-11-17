@@ -16,14 +16,13 @@
 
 
 .Section-1-bg{
-    background-image: url(img/background.jpg);
+    background-image: url(img/car-g8b37a37f4_1920.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
-    
-    
 }
 
 aside{
@@ -99,25 +98,21 @@ aside{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-left: 20%;
+   margin-left: 10%;
    flex-wrap: wrap;
-   
- 
 }
 
 .main-title h1{
     font-size: 70px;
     color: #fff;
-    margin-top: 15%;
+    margin-top: 3%;
     font-family: "Poppins";
     font-weight: bold;
     letter-spacing: 2px;
-    
-
 }
 
 .main-title h2{
-    color: #FE002D;
+    color: #6440e7;
     font-size: 50px;
     font-family: "Hanuman";
     font-weight: bold;
@@ -139,31 +134,31 @@ aside{
     margin-top: 80px;
     padding: 8px 5px;
     font-size: 20px;
-    background-color: #FE002D;
+    background-color: #6f4bf1;
     border-radius: 50px;
     color: #FBF7F7;
     font-family:"Inter" ;
     cursor: pointer;
     transition-duration: .9s;
-   
+}
+
+.main-title button a {
+    color: white;
+    text-decoration: none;
 }
 
 .main-title button:hover{
     border: solid 1px #fff;
     transition: 0.7s;
     background: transparent;
-    
-  
 }
 
-.Numeros{
-    display: flex;
-    margin-top: 35px;
-    color: #fff;
-    gap: 40px;
-    cursor: pointer;
-    transition: 0.5s;
+.main-title img {
+    padding-top: 80px;
+    width: 100px;
+    border-radius: 20px;
 }
+
 
 .title h3{
     font-size: 35px;
@@ -189,9 +184,8 @@ aside{
 
     .main-title h1{
         font-size: 40px;
-        margin-top: 75%;
+        margin-top: 15%;
         margin-right: 15%;
-        
     }
 
     .main-title h2{
@@ -202,13 +196,16 @@ aside{
     .main-title button{
         width: 150px;
     }
+}
 
-    .Numeros{
-        margin-right: 25%;
-        margin-top: 50%;
+@media only screen and (max-width: 560px) {
+    .main-title .imagens img {
+        display: none;
     }
 
-
+    .main-title button {
+        width: 150px;
+    }
 }
 
 /*================Sobre-mim================*/
@@ -217,22 +214,23 @@ aside{
 .C-sobre{
     display: flex;
     justify-content: space-around;
-    padding: 150px 0px;
+    padding: 100px 0px;
     width: 100%;
+    height: 100vh;
     flex-wrap: wrap;
-    
-
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
 }
 
 .image img{
-    width: 400px;
+    margin-top: 30px;
+    width: 300px;
     height: auto;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
 }
 
 
 .Sobre-mim h1{
-
      text-align: center;
     font-size: 55px;
     font-family: "Inter";
@@ -248,18 +246,16 @@ aside{
     font-weight: bold;
 }
 
-.Sobre-mim span{
-    color: #FD0BF3;
-}
-
 .Sobre-mim p{
     margin-top: 25px;
+    padding: 15px;
+    font-size: 20px;
     font-family: "Inria Sans";
 
 }
 
 .Sobre-mim button{
-    background-color: #EF0453;
+    background-color: blue;
     margin-left: 35%;
     margin-top: 30px;
     padding: 10px 50px;
@@ -270,27 +266,29 @@ aside{
     cursor: pointer;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     transition-duration: .9s;
-
 }
 
 .Sobre-mim button:hover{
-    color: #EF0453;
     transform: translate(0.9);
     transition: 0.8s;
     background: transparent;
-    
 }
 
-@media only screen and (max-width: 414px){
+.Sobre-mim .btn:hover {
+    background-color: rgb(43, 89, 240);
+}
+
+@media only screen and (max-width: 954px ){
 
     /*================Sobre-mim ================*/
 
     .image img{
-        width: 350px;
-        height: auto;
+        display: none;
     }
 
-
+    .Sobre-mim {
+        margin: 0 auto;
+    }
 
     .Sobre-mim p{
         font-size: 12px;
@@ -316,43 +314,34 @@ aside{
     
 }
 
-
-
-
 .Container h1{
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     font-family: "Inria Sans";
     font-weight: bold;
-    padding-top: 12%;
 }
-
-
-
 
 .Container p{
     text-align: center;
     font-family: "Inria Sans";
     color: #685B5B;
     margin-top: 25px;
-    
 } 
-
 
 .C-card{
     display: flex;
     justify-content: space-around;
-    margin-top: 15%;
+    margin-top: 5%;
     text-align: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 
-.Card{
+.Card {
     background-color: #FFFBFB;
-    padding: 50px;
+    padding: 70px;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
-    
 }
 
 .Card img{
@@ -372,12 +361,37 @@ aside{
     font-family: "Inria Sans";
     font-weight: 700;
 }
+
+.Card a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
 .Card h4{
     font-family: "Inria Sans";
     font-weight: lighter;
-    color: #BEB7B7;
+    color: black;
+    font-weight: 600;
     margin-top: 15px;
 }
+
+.Card button {
+    margin-top: 5%;
+    background-color: black;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.Card button:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.Card button a {
+    color: white;
+}
+
+
 
 .Card:hover{
     transform: scale(1.1);
@@ -385,7 +399,7 @@ aside{
 }
 
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 954px){
 
     /*===============Serviços================*/
 
@@ -522,11 +536,20 @@ aside{
     transition-duration: 0.9s;
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 954px){
 
-    .C-rodapé form input:last-child{
-        width: 100px;
-        
+    .C-rodapé button {
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 120px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 40px;
     }
+
+    
+
+    
 
 }
