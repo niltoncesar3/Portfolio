@@ -156,9 +156,13 @@ aside{
 .main-title img {
     padding-top: 80px;
     width: 100px;
-    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px;
 }
 
+.main-title .imagens img:hover {
+    transition: .9s;
+}
 
 .title h3{
     font-size: 35px;
@@ -224,9 +228,9 @@ aside{
 
 .image img{
     margin-top: 30px;
-    width: 300px;
+    width: 400px;
     height: auto;
-    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    box-shadow: 4px 4px 10px #858585, 4px 4px 4px #858585;
 }
 
 
