@@ -520,6 +520,15 @@ aside{
     font-size: 20px;
 }
 
+.C-rodapé p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.C-rodapé p a:hover {
+    text-decoration: underline;
+}
+
 .C-rodapé form img {
     margin-left: 150px;
     cursor: pointer;
@@ -534,6 +543,15 @@ aside{
 .C-rodapé .email {
     color: #fff;
     font-size: 30px;
+}
+
+.C-rodapé .curriculo {
+    color: white;
+    font-size: 30px;
+}
+
+.C-rodapé .footer {
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 954px){
