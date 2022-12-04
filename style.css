@@ -225,10 +225,11 @@ aside{
     color: white;
 }
 
+
 .image img{
-    margin-top: 30px;
+    margin-top: 0px;
     width: 400px;
-    height: auto;
+    height: 450px;
     box-shadow: 4px 4px 10px #858585, 4px 4px 4px #858585;
 }
 
