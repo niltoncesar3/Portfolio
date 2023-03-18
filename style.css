@@ -97,14 +97,14 @@ aside{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-left: 10%;
+   margin-left: 7%;
    flex-wrap: wrap;
 }
 
 .main-title h1{
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
-    margin-top: 3%;
+    margin-top: 1%;
     font-family: "Poppins";
     font-weight: bold;
     letter-spacing: 2px;
@@ -130,7 +130,7 @@ aside{
 
 .main-title button{
     width: 15%;
-    margin-top: 80px;
+    margin-top: 110px;
     padding: 8px 5px;
     font-size: 20px;
     background-color: #6f4bf1;
@@ -186,7 +186,7 @@ aside{
     /*====================Inicio====================*/
 
     .main-title h1{
-        font-size: 40px;
+        font-size: 10px;
         margin-top: 15%;
         margin-right: 15%;
     }
@@ -295,7 +295,7 @@ aside{
     }
 
     .Sobre-mim p{
-        font-size: 12px;
+        font-size: 16px;
         width: 500px;
         padding: 15px;
         text-align: center;
